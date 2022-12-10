@@ -125,3 +125,8 @@ input[type=email] {
     margin: 8px 0;
 }
 
+#textarea {
+    width: 90%;
+    max-width: 90%;
+    max-height: 150px;
+}
