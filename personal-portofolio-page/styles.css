@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucina Console", monospace, sans-serif;
+}
+
+:root {
+  --light-blue: #c0c3d4;
+  --dark: #050a30;
+}
+
+body {
+  background-color: var(--dark);
+}
+
+#navbar {
+  width: 100svh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navbar ul {
+  background-color: var(--light-blue);
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  padding: 2em;
+  color: var(--light-blue);
+  list-style: none;
+}
+
+#navbar li a {
+  text-decoration-line: none;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+#welcome-section {
+  color: var(--light-blue);
+  height: 100svh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#projects {
+  height: 40svh;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: var(--dark);
+  gap: 3em;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-blue);
+  height: 90px;
+  width: 300px;
+  padding: 2.5em;
+  text-align: center;
+  border-radius: 10px;
+  gap: 1em;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 3em;
+  color: var(--light-blue);
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7em;
+  list-style: none;
+}
+
+#footer a {
+  color: var(--light-blue);
+}
+
+@media screen and (max-width: 850px) {
+  #projects {
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0em, -10em);
+  }
+}

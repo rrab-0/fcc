@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+html {
+  font-family: "Poppins", sans-serif;
+  color: azure;
+}
+body {
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto auto auto auto;
+  min-width: 300px;
+  max-width: 720px;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: medium;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/* #survey-form {
+    background-color:rgba(27, 27, 50, 0.8);
+    position: relative;
+    left: auto;
+    right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto 0 auto;
+} */
+
+@media only screen and (max-width: 600px) {
+  #survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    position: relative;
+    left: auto;
+    right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    max-width: 330px;
+    margin: 0 auto 50px auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    position: relative;
+    left: auto;
+    right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    max-width: 330px;
+    margin: 0 auto 50px auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    position: relative;
+    left: auto;
+    right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    max-width: 330px;
+    margin: 0 auto 50px auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    position: relative;
+    left: auto;
+    right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    max-width: 330px;
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #survey-form {
+    background-color: rgba(27, 27, 50, 0.8);
+    position: relative;
+    left: auto;
+    right: auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    max-width: 600px;
+    margin: 0 auto 10% auto;
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  margin: 8px 0;
+}
+
+input[type="email"] {
+  width: 100%;
+  margin: 8px 0;
+}
+
+#textarea {
+  width: 90%;
+  max-width: 90%;
+  max-height: 150px;
+}

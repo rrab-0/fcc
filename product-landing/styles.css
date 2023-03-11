@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucina Console", monospace, sans-serif;
+}
+
+:root {
+  --light-blue: #c0c3d4;
+  --dark: #050a30;
+  --white: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100svh;
+  width: 100%;
+  padding-top: 150px;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  background-color: var(--dark);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3em;
+  width: 100svh;
+  width: 100vh;
+  padding: 1em;
+  padding-left: 5em;
+}
+
+img {
+  width: 50px;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  padding: 0.5;
+}
+
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 3em;
+}
+
+#nav-bar a {
+  color: var(--light-blue);
+  text-decoration-line: none;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  width: 100svh;
+  width: 100vh;
+}
+
+#content-text {
+  width: 600px;
+  text-align: justify;
+  align-self: flex-start;
+  text-indent: 1em;
+  background-color: var(--dark);
+  color: var(--light-blue);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+#form-container {
+  background-color: var(--dark);
+  color: var(--light-blue);
+  padding: 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 1em;
+  width: 600px;
+}
+
+input {
+  padding: 0.3em;
+}
+
+video {
+  padding-bottom: 5em;
+}
+
+#footer {
+  background-color: var(--dark);
+  color: var(--light-blue);
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  gap: 0.8em;
+  width: max-content;
+  padding: 1em;
+  padding-left: 1.5em;
+}
+
+#footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  list-style: none;
+}
+
+#footer a {
+  color: var(--light-blue);
+}
+
+@media screen and (max-width: 850px) {
+  #footer {
+    align-self: center;
+    border-top-left-radius: 10px;
+  }
+}

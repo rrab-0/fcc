@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucina Console", monospace, sans-serif;
+}
+
+:root {
+  --black: #191c1d;
+  --white: rgb(245, 227, 227);
+  --gray: #646060;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  width: 180px;
+  height: 100svh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3em;
+  gap: 3em;
+  border-right: 2px solid var(--gray);
+  background-color: var(--white);
+}
+
+#navbar a {
+  gap: 10em;
+  text-decoration-line: none;
+  color: var(--black);
+}
+
+#navbar a:hover {
+  text-decoration-line: underline;
+}
+
+#navbar header {
+  padding-bottom: 2em;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.main-section {
+  height: max-content;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25em;
+  gap: 2em;
+  padding: 3em;
+}
+
+#section-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  padding-left: 0;
+  gap: 4em;
+}
+
+#Hello_World,
+#Secondary,
+#Coding_Time,
+#List_your_sadness_away,
+#Last_but_not_least {
+  border-radius: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.main-section > header {
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+#first-p > p,
+#second-p > p {
+  text-indent: 1em;
+}
+
+@media screen and (min-width: 850px) {
+  .main-section {
+    width: 410px;
+    margin-left: 20em;
+  }
+}
